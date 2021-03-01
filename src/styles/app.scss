@@ -11,6 +11,10 @@ h1, h2, h3 {
     color: hsl(209, 61%, 16%);
 }
 
+#root > div > div.player > div.time-control > input[type=range] {
+    color: hsl(170, 97%, 15%);
+}
+
 @import "./player";
 @import "./song";
 @import "./library";

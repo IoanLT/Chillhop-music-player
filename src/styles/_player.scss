@@ -11,10 +11,11 @@
     width: 100%;
     max-width: 500px;
     display: flex;
+    
 
     input {
         width: 100%;       
-        padding: 1rem 0;
+        padding: 1rem 0;        
     }
 
     p {
@@ -32,5 +33,6 @@
 
     svg {
         cursor: pointer;
+        color: hsl(209, 61%, 16%);
     }
 }
