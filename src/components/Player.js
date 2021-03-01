@@ -66,23 +66,13 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying }) => {
                     className="skip-back" 
                     size="2x" 
                     icon={faAngleLeft} 
-                />
-                {
-                    isPlaying ?
-                        (<FontAwesomeIcon 
-                            className="pause" 
-                            size="2x" 
-                            icon={faPause} 
-                            onClick={playSongHandler}
-                        />) : 
-                        (<FontAwesomeIcon 
-                            className="play" 
-                            size="2x" 
-                            icon={faPlay} 
-                            onClick={playSongHandler}
-                        />)
-                }
-                
+                />                
+                <FontAwesomeIcon 
+                    className="pause" 
+                    size="2x" 
+                    icon={isPlaying ? faPause : faPlay} 
+                    onClick={playSongHandler}
+                />               
                 <FontAwesomeIcon 
                     className="skip-forward" 
                     size="2x" 
