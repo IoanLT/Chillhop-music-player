@@ -35,6 +35,14 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying }) => {
             duration
         })
     }
+
+    // This will set any selected song to play if the previous song was playing already
+    const autoPlayHandler = () => {
+        if(isPlaying){
+            audioRef.current.play();
+        }
+    }
+
     // This format will format the time in minutes and seconds
     const getTime = (time) => Math.floor(time / 60) + ":" + ("0" + Math.floor(time % 60)).slice(-2);
 
@@ -83,6 +91,7 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying }) => {
             <audio 
                 // The onTimeUpdate event occurs when the playing position of an audio/video has changed
                 onTimeUpdate={timeUpdateHandler} 
+                onLoadedData={autoPlayHandler}
                 // The onLoadedMetadata event occurs when meta data for the specified audio/video has been loaded.
                 onLoadedMetadata={timeUpdateHandler}
                 ref={audioRef} 
