@@ -5,13 +5,14 @@
     // width: 350px;    
     height: 100%;
     // padding: 20px;
-    overflow: scroll;
-    background: hsl(212, 33%, 89%);
+    overflow: scroll;    
+    background: hsl(240, 100%, 95%);
 
     h2 {
         text-align: center;
         padding-left: 10px;
-        margin: 30px 0;
+        margin-top: 50px;
+        margin-bottom: 35px;
         background: transparent;
     }
 }
@@ -21,7 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: left; 
-    background: hsl(212, 33%, 89%);  
+    // background: hsl(154, 75%, 87%);  
       
 }
 
@@ -29,9 +30,9 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 15px 10px; 
-    cursor: pointer;
-    background: hsl(212, 33%, 89%);
+    padding: 15px 20px; 
+    cursor: pointer;    
+    background: hsl(240, 100%, 95%);
 
     img {
         width: 75px;
@@ -40,7 +41,7 @@
     }
 
     &:hover {
-        background: hsl(210, 31%, 80%);
+        background: hsl(238, 100%, 88%);
         
     }
 }
@@ -51,13 +52,13 @@
     h3 {
         background: transparent;        
         font-size: 1.1rem;
-        margin-left: 10px;
-        color: hsl(170, 97%, 15%);
+        margin-left: 20px;
+        
     }
     h4 {
         background: transparent;        
-        font-size: 0.7rem;
-        margin-left: 10px;
+        font-size: 0.8rem;
+        margin-left: 20px;
         color: hsl(209, 34%, 30%);
     }
 }

@@ -4,16 +4,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
-    background-color: hsl(210, 36%, 96%);
+    // background-color: hsl(210, 36%, 96%);
 }
 
 h1, h2, h3 {
     color: hsl(209, 61%, 16%);
 }
 
-#root > div > div.player > div.time-control > input[type=range] {
-    color: hsl(170, 97%, 15%);
-}
+// #root > div > div.player > div.time-control > input[type=range] {
+//     color: hsl(170, 97%, 15%);
+// }
 
 @import "./player";
 @import "./song";
