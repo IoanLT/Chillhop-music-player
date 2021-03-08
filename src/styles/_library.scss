@@ -6,10 +6,9 @@
     height: 100%;
     // padding: 20px;
     overflow: scroll;    
-    background: hsl(240, 100%, 95%);
-    // transform: translateX(-100%);
-    transition: all 0.5 ease;
-    // opacity: 0;
+    // background: hsl(240, 100%, 95%);    
+    transition: all 0.7s ease;
+    transform: translateX(0);    
 
     h2 {
         text-align: center;
@@ -18,6 +17,11 @@
         margin-bottom: 35px;
         background: transparent;
     }
+}
+
+.hidden {
+    transition: all 0.7s ease;
+    transform: translateX(-100%);    
 }
 
 .library-songs {
@@ -35,7 +39,7 @@
     align-items: center;
     padding: 15px 20px; 
     cursor: pointer;    
-    background: hsl(240, 100%, 95%);
+    // background: hsl(240, 100%, 95%);
 
     img {
         width: 75px;
@@ -44,7 +48,7 @@
     }
 
     &:hover {
-        background: hsl(238, 100%, 88%);
+        background: hsl(240, 100%, 95%);
         
     }
 }

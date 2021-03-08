@@ -13,10 +13,14 @@ const App = () => {
   const [songs, setSongs] = useState(data());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [displayNav, setDisplayNav] = useState(false);
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation 
+        displayNav={displayNav} 
+        setDisplayNav={setDisplayNav} 
+      />
       <Song 
         currentSong={currentSong} 
         setCurrentSong={setCurrentSong}         
@@ -31,6 +35,8 @@ const App = () => {
         songs={songs}
         currentSong={currentSong}  
         setCurrentSong={setCurrentSong}
+        displayNav={displayNav} 
+        setDisplayNav={setDisplayNav}
       />
     </div>
   );
