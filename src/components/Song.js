@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Song = ({ currentSong, setCurrentSong }) => {
+const Song = ({ currentSong }) => {
     return (
         <div className="song-container">
             <img src={currentSong.cover} alt="cover album" />

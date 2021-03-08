@@ -10,7 +10,7 @@ import data from './util';
 import Navigation from './components/Navigation';
 
 const App = () => {
-  const [songs, setSongs] = useState(data());
+  const [songs] = useState(data());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [displayNav, setDisplayNav] = useState(false);
@@ -26,6 +26,7 @@ const App = () => {
         setCurrentSong={setCurrentSong}         
       />
       <Player 
+        songs={songs}
         currentSong={currentSong} 
         setCurrentSong={setCurrentSong} 
         isPlaying={isPlaying}

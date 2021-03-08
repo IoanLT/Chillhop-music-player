@@ -11,6 +11,11 @@ h1, h2, h3 {
     color: hsl(209, 61%, 16%);
 }
 
+.App {
+    height: 100%;
+    width: 100%;
+}
+
 @import "./player";
 @import "./song";
 @import "./library";
