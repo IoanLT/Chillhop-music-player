@@ -7,6 +7,7 @@ import Library from './components/Library';
 import './styles/app.scss';
 // Import data file
 import data from './util';
+import Navigation from './components/Navigation';
 
 const App = () => {
   const [songs, setSongs] = useState(data());
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <Navigation />
       <Song 
         currentSong={currentSong} 
         setCurrentSong={setCurrentSong}         

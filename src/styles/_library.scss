@@ -7,6 +7,9 @@
     // padding: 20px;
     overflow: scroll;    
     background: hsl(240, 100%, 95%);
+    // transform: translateX(-100%);
+    transition: all 0.5 ease;
+    // opacity: 0;
 
     h2 {
         text-align: center;
@@ -59,8 +62,12 @@
         background: transparent;        
         font-size: 0.8rem;
         margin-left: 20px;
-        color: hsl(209, 34%, 30%);
+        color: hsl(209, 28%, 39%);
     }
+}
+
+.selected {
+    background: hsl(238, 100%, 88%);
 }
 
 
