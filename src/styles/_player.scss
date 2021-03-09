@@ -16,7 +16,9 @@
 
     input {
         width: 100%;       
-        padding: 1rem 0;               
+        padding: 1rem 0; 
+        -webkit-appearance: none;         
+        background: #fff;             
     }
 
     p {
@@ -34,6 +36,26 @@
 
     svg {
         cursor: pointer;
-        color: hsl(209, 61%, 16%);
+        // color: hsl(209, 61%, 16%);
+        color: hsl(243, 94%, 70%);
     }
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   height: 16px;
+   width: 16px;
+//    background: hsl(209, 61%, 16%);
+   background: hsl(243, 94%, 70%);
+   border: 1px solid hsl(243, 94%, 70%);
+   border-radius: 50%;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+   -webkit-appearance: none;   
+//    background: hsl(209, 23%, 60%);
+   background: hsl(240, 100%, 95%);
+   height: 16px;
 }

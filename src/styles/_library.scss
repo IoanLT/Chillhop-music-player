@@ -1,5 +1,6 @@
 .library {
     position: fixed;
+    // position: absolute;
     top: 0;
     left: 0;
     // width: 350px;    
@@ -20,6 +21,14 @@
 }
 
 .hidden {
+    position: fixed;
+    position: absolute;
+    // top: 0;
+    left: 0;
+    // width: 350px;    
+    height: 100%;
+    // padding: 20px;
+    overflow: scroll;  
     transition: all 0.7s ease;
     transform: translateX(-100%);    
 }
