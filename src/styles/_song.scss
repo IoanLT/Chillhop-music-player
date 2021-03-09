@@ -13,7 +13,7 @@
         max-width: 500px;        
         border-radius: 50%;
         margin-bottom: 40px;
-        animation: rotation 40s infinite linear;
+        // animation: rotation 40s infinite linear;
     }
 
     h2 {
@@ -24,6 +24,14 @@
         font-size: 1.1rem;
         margin-bottom: 20px;
     }
+}
+
+.track-animation {
+    animation: rotation 40s infinite linear;
+}
+
+.track-animation-pause {
+    animation-play-state: paused;
 }
 
 @keyframes rotation {

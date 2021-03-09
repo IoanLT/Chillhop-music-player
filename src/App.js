@@ -23,7 +23,7 @@ const App = () => {
       />
       <Song 
         currentSong={currentSong} 
-        setCurrentSong={setCurrentSong}         
+        isPlaying={isPlaying}        
       />
       <Player 
         songs={songs}
