@@ -12,8 +12,8 @@
         width: 100%;
         max-width: 500px;        
         border-radius: 50%;
-        margin-bottom: 40px;
-        // animation: rotation 40s infinite linear;
+        margin-bottom: 40px; 
+        box-shadow: 0 4px 6px rgba(0,0,0,0.7), 0 4px 6px rgba(0,0,0,0.7);       
     }
 
     h2 {
@@ -27,7 +27,7 @@
 }
 
 .track-animation {
-    animation: rotation 40s infinite linear;
+    animation: rotation 90s infinite linear;
 }
 
 .track-animation-pause {
