@@ -15,7 +15,7 @@ const chillhop = () => {
             name: "Kinsfolk",
             artist: "Aarigod",
             cover: "https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg",            
-            color: ['#617949', '#4C3C29'],
+            color: ['#91AA57', '#2A372D'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12997'
         },
         {
@@ -23,7 +23,7 @@ const chillhop = () => {
             name: "Maple",
             artist: "Arbour, Aarigod",
             cover: "https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg",            
-            color: ['#617949', '#4C3C29'],
+            color: ['#91AA57', '#2A372D'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=13015'
         },
         {

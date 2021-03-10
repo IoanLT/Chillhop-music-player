@@ -1,21 +1,25 @@
-nav {
-    // min-height: 10vh;
-    height: 80px;
+nav {   
+    position: relative;
+    top: 0; 
+    height: 100px;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
+    margin-bottom: 40px;
 
-    button {        
-        color: hsl(243, 94%, 70%);
+    button {          
+        color: #fff;
         background: transparent;        
-        cursor: pointer;                        
-        border: 2px solid hsl(243, 94%, 70%);                
+        cursor: pointer;          
+        border: 2px solid #fff;                
         padding: 0.5rem;
         transition: all 0.3s ease;
 
-        &:hover {           
-            background: hsl(243, 94%, 70%);
-            color: #fff;
+        &:hover {      
+            background: #000;           
+            color: #fff;            
         }        
     }
 }
