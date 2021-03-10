@@ -1,15 +1,23 @@
 import { v4 as uuidv4 } from 'uuid';
 
 const chillhop = () => {
-    return [
+    return [        
         {
             id: uuidv4(),
-            name: "Belly Breathing",
-            artist: "Birocratic",
-            cover: "https://chillhop.com/wp-content/uploads/2020/07/5c2d5b05dfc98afb5ed850ca918f732445b8ca1e-1024x1024.jpg",            
-            color: ['#7DCBB3', '#DF8D8F'],
-            audio: 'https://mp3.chillhop.com/serve.php/?mp3=8675'
+            name: "Seascape",
+            artist: "Makzo",
+            cover: "https://chillhop.com/wp-content/uploads/2020/11/f78c39b4bb6313ddd0354bef896c591bfb490ff8-1024x1024.jpg",            
+            color: ['#FDDD5B', '#445B9B'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=11773'
         },
+        {
+            id: uuidv4(),
+            name: "Oasis",
+            artist: "Makzo",
+            cover: "https://chillhop.com/wp-content/uploads/2020/11/f78c39b4bb6313ddd0354bef896c591bfb490ff8-1024x1024.jpg",            
+            color: ['#FDDD5B', '#445B9B'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=11768'
+        },        
         {
             id: uuidv4(),
             name: "Kinsfolk",
@@ -57,7 +65,39 @@ const chillhop = () => {
             cover: "https://chillhop.com/wp-content/uploads/2020/12/33a2a875828118a3ff260638a88362936104879a-1024x1024.jpg",            
             color: ['#D7A0C8', '#3D4166'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11229'
-        }
+        },
+        {
+            id: uuidv4(),
+            name: "Belly Breathing",
+            artist: "Birocratic",
+            cover: "https://chillhop.com/wp-content/uploads/2020/07/5c2d5b05dfc98afb5ed850ca918f732445b8ca1e-1024x1024.jpg",            
+            color: ['#7DCBB3', '#DF8D8F'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=8675'
+        },        
+        {
+            id: uuidv4(),
+            name: "Woodpecker",
+            artist: "Sleepy Fish",
+            cover: "https://chillhop.com/wp-content/uploads/2020/09/c209a7df7b9bc133dfff73ce86ebc3c57c2b73dd-1024x1024.jpg",            
+            color: ['#EDE4C7', '#226581'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=10033'
+        },
+        {
+            id: uuidv4(),
+            name: "Wildlife",
+            artist: "Philanthrope",
+            cover: "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",            
+            color: ['#353923', '#7B5043'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=10263'
+        },
+        {
+            id: uuidv4(),
+            name: "Serendipity",
+            artist: "Philanthrope, The Field Tapes",
+            cover: "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",            
+            color: ['#353923', '#7B5043'],
+            audio: 'https://mp3.chillhop.com/serve.php/?mp3=10249'
+        }        
     ]
 };
 
