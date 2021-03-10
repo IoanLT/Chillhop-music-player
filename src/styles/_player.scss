@@ -10,15 +10,15 @@
 
 .time-control {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     display: flex;
     
 
     input {
         width: 100%;       
         padding: 1rem 0; 
-        -webkit-appearance: none;         
-        background: #fff;             
+        -webkit-appearance: none;                   
+        background: transparent;             
     }
 
     p {
@@ -28,16 +28,15 @@
 
 .play-control {
     width: 100%;
-    max-width: 500px;
+    max-width: 350px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 
     svg {
-        cursor: pointer;
-        // color: hsl(209, 61%, 16%);
-        color: hsl(243, 94%, 70%);
+        cursor: pointer;                 
+        color: #000;
     }
 }
 
@@ -48,14 +47,12 @@ input[type="range"]::-webkit-slider-thumb {
    -webkit-appearance: none;
    height: 16px;
    width: 16px;
-//    background: hsl(209, 61%, 16%);
-   background: hsl(243, 94%, 70%);
-   border: 1px solid hsl(243, 94%, 70%);
+   background: #000;
+   border: 1px solid #000;
    border-radius: 50%;
 }
 input[type="range"]::-webkit-slider-runnable-track {
-   -webkit-appearance: none;   
-//    background: hsl(209, 23%, 60%);
+   -webkit-appearance: none; 
    background: hsl(240, 100%, 95%);
    height: 16px;
 }

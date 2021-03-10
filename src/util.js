@@ -47,7 +47,7 @@ const chillhop = () => {
             name: "Lax Incense",
             artist: "Mama Aiuto, Daphné",
             cover: "https://chillhop.com/wp-content/uploads/2021/01/6b1bb8736ee3e972747bc11f312e31cf7f5823e4-1024x1024.jpg",            
-            color: ['#69901E', '#64291D'],
+            color: ['#427D8B', '#64291D'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12125'
         },
         {
