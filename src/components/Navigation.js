@@ -10,11 +10,13 @@ const Navigation = ({ displayNav, setDisplayNav }) => {
     }
 
     return (
-        <nav>
-            {/* <h1>Waves</h1> */}
-            <button onClick={toggleNavHandler}>
-                Library
-                <FontAwesomeIcon icon={faMusic} />
+        <nav>            
+            <button 
+                onClick={toggleNavHandler}
+                style={{ color: displayNav ? '#000' : '#fff' }}
+            >
+                {/* Library */}
+                <FontAwesomeIcon icon={faMusic} size="3x" />
             </button>
         </nav>
     )

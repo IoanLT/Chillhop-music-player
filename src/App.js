@@ -18,8 +18,7 @@ const App = () => {
   return (
     <div 
       className="App"
-      style={{ background: `linear-gradient(to top, ${currentSong.color[0]}, ${currentSong.color[1]})` }}
-      /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+      style={{ background: `linear-gradient(to top, ${currentSong.color[0]}, ${currentSong.color[1]})` }}      
     >
       <Navigation 
         displayNav={displayNav} 

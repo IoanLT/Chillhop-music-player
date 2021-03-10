@@ -1,16 +1,30 @@
 .library {
-    position: fixed;
-    // position: absolute;
+    position: fixed;    
     top: 0;
-    left: 0;
-    // width: 350px;    
-    height: 100%;
-    // padding: 20px;
-    overflow: scroll;    
-    // background: hsl(240, 100%, 95%);    
+    left: 0;        
+    height: 100%;    
+    overflow: scroll;     
     transition: all 0.7s ease;
-    transform: translateX(0);    
+    transform: translateX(0); 
+    background: #fff;   
 
+    h2 {
+        text-align: center;
+        padding-left: 10px;
+        margin: 35px 0;        
+        background: transparent;
+    }
+}
+
+.hidden {
+    position: fixed;    
+    top: 0;
+    left: 0;       
+    height: 100%;    
+    overflow: scroll;  
+    transition: all 0.7s ease;
+    transform: translateX(-100%);  
+    
     h2 {
         text-align: center;
         padding-left: 10px;
@@ -20,26 +34,11 @@
     }
 }
 
-.hidden {
-    position: fixed;
-    position: absolute;
-    // top: 0;
-    left: 0;
-    // width: 350px;    
-    height: 100%;
-    // padding: 20px;
-    overflow: scroll;  
-    transition: all 0.7s ease;
-    transform: translateX(-100%);    
-}
-
 .library-songs {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: left; 
-    // background: hsl(154, 75%, 87%);  
-      
+    align-items: left;      
 }
 
 .library-song {
@@ -48,12 +47,10 @@
     align-items: center;
     padding: 15px 20px; 
     cursor: pointer;    
-    // background: hsl(240, 100%, 95%);
-
+    
     img {
         width: 75px;
-        border-radius: 50%;
-        // margin: 0 10px;
+        border-radius: 50%;       
     }
 
     &:hover {
