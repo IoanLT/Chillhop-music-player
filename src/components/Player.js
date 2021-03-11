@@ -8,7 +8,7 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
         duration: 0
     });
 
-    // Using useRef to grab the audio file
+    // Using useRef hook to grab the audio file
     const audioRef = useRef(null);
 
     // Event handlers    

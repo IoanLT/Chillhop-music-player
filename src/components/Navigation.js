@@ -4,18 +4,19 @@ import { faMusic } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = ({ displayNav, setDisplayNav }) => {
 
+    // This method will toggle the library to show or hide
     const toggleNavHandler = () => {
         let prevState = !displayNav;
         setDisplayNav(prevState);
-    }
+    }   
 
     return (
         <nav>            
-            <button 
+            <button                 
                 onClick={toggleNavHandler}
-                style={{ color: displayNav ? '#000' : '#fff' }}
-            >
-                {/* Library */}
+                style={{ display: displayNav ? 'none' : 'inherit' }}
+                // style={{ color: displayNav ? '#000' : '#fff' }}                
+            >                
                 <FontAwesomeIcon icon={faMusic} size="3x" />
             </button>
         </nav>
