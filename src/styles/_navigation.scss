@@ -1,11 +1,12 @@
 nav {   
     position: absolute;
     top: 0; 
-    left: 40px;    
+    width: 100%;
+    padding: 0 40px;   
     height: 100px;    
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;    
+    justify-content: flex-end;    
     align-items: center;     
 
     button {          

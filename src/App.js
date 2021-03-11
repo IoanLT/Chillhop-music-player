@@ -4,6 +4,7 @@ import Player from "./components/Player";
 import Song from "./components/Song";
 import Library from './components/Library';
 // Import styles
+import styled from 'styled-components';
 import './styles/app.scss';
 // Import data file
 import data from './util';
@@ -16,8 +17,7 @@ const App = () => {
   const [displayNav, setDisplayNav] = useState(false);
 
   return (
-    <div 
-      className="App"
+    <MainWrapper       
       style={{ background: `linear-gradient(to top, ${currentSong.color[0]}, ${currentSong.color[1]})` }}      
     >
       <Navigation 
@@ -42,8 +42,18 @@ const App = () => {
         displayNav={displayNav} 
         setDisplayNav={setDisplayNav}
       />
-    </div>
+    </MainWrapper>
   );
 }
+
+const MainWrapper = styled.div`  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 3% 5%;
+`
 
 export default App;
