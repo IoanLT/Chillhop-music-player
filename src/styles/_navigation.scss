@@ -1,25 +1,25 @@
-nav {   
-    position: absolute;
-    top: 0; 
-    width: 100%;
-    padding: 0 40px;   
-    height: 100px;    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;    
-    align-items: center;     
+// nav {   
+//     position: absolute;
+//     top: 0; 
+//     width: 100%;
+//     padding: 0 40px;   
+//     height: 100px;    
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;    
+//     align-items: center;     
 
-    button {          
-        color: #fff;        
-        background: transparent;        
-        cursor: pointer; 
-        border: none;                        
-        padding: 0.5rem;
-        transition: all 0.3s ease;
-        z-index: 9;
+//     button {          
+//         color: #fff;        
+//         background: transparent;        
+//         cursor: pointer; 
+//         border: none;                        
+//         padding: 0.5rem;
+//         transition: all 0.3s ease;
+//         z-index: 9;
 
-        &:hover {            
-            transform: rotate(360deg);
-        }
-    }    
-}
+//         &:hover {            
+//             transform: rotate(360deg);
+//         }
+//     }    
+// }

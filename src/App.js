@@ -15,6 +15,7 @@ const App = () => {
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [displayNav, setDisplayNav] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <MainWrapper       
@@ -23,6 +24,8 @@ const App = () => {
       <Header 
         displayNav={displayNav} 
         setDisplayNav={setDisplayNav} 
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
       />
       <Song 
         currentSong={currentSong} 
@@ -46,7 +49,7 @@ const App = () => {
   );
 }
 
-const MainWrapper = styled.div`  
+const MainWrapper = styled.div`     
   display: flex;
   flex-direction: column;
   justify-content: center;

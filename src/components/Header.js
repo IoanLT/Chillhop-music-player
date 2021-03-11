@@ -1,8 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic } from '@fortawesome/free-solid-svg-icons';
+import styled from 'styled-components';
+import Burger from './Burger';
 
-const Header = ({ displayNav, setDisplayNav }) => {
+const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
 
     // This method will toggle the library to show or hide
     const toggleNavHandler = () => {
@@ -11,7 +13,8 @@ const Header = ({ displayNav, setDisplayNav }) => {
     }   
 
     return (
-        <nav>            
+        <HeaderNavigation> 
+            <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
             <button                 
                 onClick={toggleNavHandler}
                 style={{ display: displayNav ? 'none' : 'inherit' }}
@@ -19,8 +22,34 @@ const Header = ({ displayNav, setDisplayNav }) => {
             >                
                 <FontAwesomeIcon icon={faMusic} size="3x" />
             </button>
-        </nav>
+        </HeaderNavigation>
     )
 }
+
+const HeaderNavigation = styled.div`
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    padding: 0 40px;   
+    height: 100px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center;     
+
+    button {          
+        color: #fff;        
+        background: transparent;        
+        cursor: pointer; 
+        border: none;                        
+        padding: 0.5rem;
+        transition: all 0.3s ease;
+        z-index: 9;
+
+        &:hover {            
+            transform: rotate(360deg);
+        }
+    }    
+`
 
 export default Header;
