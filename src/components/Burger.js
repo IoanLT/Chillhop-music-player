@@ -1,8 +1,17 @@
 import styled from 'styled-components';
 
-const Burger = ({ openMenu, setOpenMenu }) => {
+const Burger = ({ openMenu, setOpenMenu, displayNav, setDisplayNav }) => {
+
+    // This method will toggle the library to show or hide
+    const toggleNavHandler = () => {
+        let prevStateNav = !displayNav;
+        let prevStateMenu = !openMenu;
+        setDisplayNav(prevStateNav);
+        setOpenMenu(prevStateMenu);
+    } 
+
     return (
-      <StyledBurger open={openMenu} onClick={() => setOpenMenu(!openMenu)}>
+      <StyledBurger openMenu={openMenu} onClick={toggleNavHandler}>
         <div />
         <div />
         <div />

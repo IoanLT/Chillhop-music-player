@@ -6,21 +6,18 @@ import Burger from './Burger';
 
 const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
 
-    // This method will toggle the library to show or hide
-    const toggleNavHandler = () => {
-        let prevState = !displayNav;
-        setDisplayNav(prevState);
-    }   
+      
 
     return (
         <HeaderNavigation> 
-            <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
-            <button                 
-                onClick={toggleNavHandler}
-                style={{ display: displayNav ? 'none' : 'inherit' }}
-                // style={{ color: displayNav ? '#000' : '#fff' }}                
-            >                
-                <FontAwesomeIcon icon={faMusic} size="3x" />
+            <Burger 
+                openMenu={openMenu} 
+                setOpenMenu={setOpenMenu}  
+                displayNav={displayNav} 
+                setDisplayNav={setDisplayNav}                 
+            />
+            <button>                
+                <FontAwesomeIcon icon={faMusic} size="2x" />
             </button>
         </HeaderNavigation>
     )
