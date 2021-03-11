@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMusic } from '@fortawesome/free-solid-svg-icons';
 
-const Navigation = ({ displayNav, setDisplayNav }) => {
+const Header = ({ displayNav, setDisplayNav }) => {
 
     // This method will toggle the library to show or hide
     const toggleNavHandler = () => {
@@ -23,4 +23,4 @@ const Navigation = ({ displayNav, setDisplayNav }) => {
     )
 }
 
-export default Navigation;
+export default Header;

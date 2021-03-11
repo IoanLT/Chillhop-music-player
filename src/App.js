@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import './styles/app.scss';
 // Import data file
 import data from './util';
-import Navigation from './components/Navigation';
+import Header from './components/Header';
 
 const App = () => {
   const [songs] = useState(data());
@@ -20,7 +20,7 @@ const App = () => {
     <MainWrapper       
       style={{ background: `linear-gradient(to top, ${currentSong.color[0]}, ${currentSong.color[1]})` }}      
     >
-      <Navigation 
+      <Header 
         displayNav={displayNav} 
         setDisplayNav={setDisplayNav} 
       />
