@@ -6,7 +6,11 @@
     overflow: scroll;     
     transition: all 0.7s ease;
     transform: translateX(0); 
-    background: #fff;   
+    background: #fff;  
+    
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 
     h2 {
         text-align: center;
