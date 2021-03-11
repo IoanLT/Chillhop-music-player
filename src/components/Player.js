@@ -73,7 +73,12 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
             currentTime: e.target.value
         })
     }
-    
+
+    const songEndHandler = async () => {
+        const trackIndex = songs.findIndex(song => song.id === currentSong.id);           
+        await setCurrentSong(songs[(trackIndex + 1) % songs.length]);            
+        if(isPlaying) audioRef.current.play();
+    }     
 
     return (
         <div className="player">
@@ -116,7 +121,9 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
                 // The onLoadedMetadata event occurs when meta data for the specified audio/video has been loaded.
                 onLoadedMetadata={timeUpdateHandler}
                 ref={audioRef} 
-                src={currentSong.audio}>
+                src={currentSong.audio}
+                onEnded={songEndHandler}
+            >
             </audio>         
         </div>
     )
