@@ -1,7 +1,6 @@
 import React from 'react';
 import LibrarySong from './LibrarySong';
 
-
 const Library = ({ songs, currentSong, setCurrentSong, displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
     return (
         <div className={displayNav ? 'library' : 'hidden'}>

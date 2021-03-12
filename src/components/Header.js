@@ -4,9 +4,7 @@ import { faMusic } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 import Burger from './Burger';
 
-const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
-
-      
+const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {      
 
     return (
         <HeaderNavigation> 
@@ -17,7 +15,11 @@ const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
                 setDisplayNav={setDisplayNav}                 
             />
             <button>                
-                <FontAwesomeIcon icon={faMusic} size="2x" />
+                <FontAwesomeIcon 
+                    style={{ display: displayNav ? 'none' : 'inherit' }}
+                    icon={faMusic} 
+                    size="2x" 
+                />
             </button>
         </HeaderNavigation>
     )
