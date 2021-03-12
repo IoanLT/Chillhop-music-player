@@ -43,7 +43,7 @@ const SongContainer = styled.div`
     }
 
     h3 {        
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 20px;
         color: #000;
     }
