@@ -7,7 +7,7 @@ const Burger = ({ openMenu, setOpenMenu, displayNav, setDisplayNav }) => {
         let prevStateNav = !displayNav;
         let prevStateMenu = !openMenu;
         setDisplayNav(prevStateNav);
-        setOpenMenu(prevStateMenu);
+        setOpenMenu(prevStateMenu);                
     } 
 
     return (

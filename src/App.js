@@ -44,6 +44,8 @@ const App = () => {
         setCurrentSong={setCurrentSong}
         displayNav={displayNav} 
         setDisplayNav={setDisplayNav}
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
       />
     </MainWrapper>
   );
