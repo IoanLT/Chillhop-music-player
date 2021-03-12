@@ -3,26 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    // background-color: hsl(210, 36%, 96%);
+    font-family: 'Nunito', sans-serif;        
 }
 
 h1, h2, h3 {
     color: hsl(209, 61%, 16%);
 }
 
-.App {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    padding: 3% 5%;
-}
-
 @import "./player";
 @import "./song";
 @import "./library";
-@import "./navigation";
+
 

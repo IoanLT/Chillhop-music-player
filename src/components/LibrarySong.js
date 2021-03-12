@@ -1,12 +1,14 @@
 import React from 'react';
 
-const LibrarySong = ({ song, currentSong, setCurrentSong, displayNav, setDisplayNav }) => {
+const LibrarySong = ({ song, currentSong, setCurrentSong, displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
 
     // This method will set the current song to the song we click on and hide the library menu    
     const songSelectHandler = () => {        
         setCurrentSong(song);
         let prevState = !displayNav;
         setDisplayNav(prevState);
+        let toggleMenu = !openMenu;
+        setOpenMenu(toggleMenu);
     }
 
     return (
