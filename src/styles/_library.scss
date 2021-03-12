@@ -1,11 +1,11 @@
 .library {
-    position: fixed;    
-    top: 0;
-    left: 0;        
+    position: fixed;         
+    top: 0;             
+    right: 0;        
     height: 100%;    
     overflow: scroll;     
     transition: all 0.7s ease;
-    transform: translateX(0); 
+    transform: translateX(0);     
     background: #fff;  
     
     @media (max-width: 500px) {
@@ -23,17 +23,16 @@
 .hidden {
     position: fixed;    
     top: 0;
-    left: 0;       
+    right: 0;           
     height: 100%;    
     overflow: scroll;  
     transition: all 0.7s ease;
-    transform: translateX(-100%);  
+    transform: translateX(100%);  
     
     h2 {
         text-align: center;
-        padding-left: 10px;
-        margin-top: 50px;
-        margin-bottom: 35px;
+        padding-left: 10px;        
+        margin: 35px 0;
         background: transparent;
     }
 }
@@ -84,7 +83,7 @@
     background: hsl(238, 100%, 88%);
 }
 
-
+// Scrollbar styling
 *::-webkit-scrollbar {
     width: 5px;
     height: 100%;

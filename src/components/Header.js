@@ -7,13 +7,7 @@ import Burger from './Burger';
 const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {      
 
     return (
-        <HeaderNavigation> 
-            <Burger 
-                openMenu={openMenu} 
-                setOpenMenu={setOpenMenu}  
-                displayNav={displayNav} 
-                setDisplayNav={setDisplayNav}                 
-            />
+        <HeaderNavigation>           
             <button>                
                 <FontAwesomeIcon 
                     style={{ display: displayNav ? 'none' : 'inherit' }}
@@ -21,6 +15,13 @@ const Header = ({ displayNav, setDisplayNav, openMenu, setOpenMenu }) => {
                     size="2x" 
                 />
             </button>
+
+            <Burger 
+                openMenu={openMenu} 
+                setOpenMenu={setOpenMenu}  
+                displayNav={displayNav} 
+                setDisplayNav={setDisplayNav}                 
+            />
         </HeaderNavigation>
     )
 }
