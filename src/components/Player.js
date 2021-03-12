@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faPause, faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -58,8 +59,7 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
                 return;
             }
             setCurrentSong(songs[(songIndex - 1) % songs.length]);
-        }
-        
+        }        
     }
 
     // This format will format the time in minutes and seconds
@@ -81,8 +81,8 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
     }     
 
     return (
-        <div className="player">
-            <div className="time-control">
+        <PlayerWrapper>
+            <TimeControl>
                 <p>{getTime(songInfo.currentTime)}</p>
                 <input 
                     type="range"
@@ -92,8 +92,9 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
                     onChange={dragHandler}
                 />
                 <p>{getTime(songInfo.duration)}</p>
-            </div> 
-            <div className="play-control">
+            </TimeControl> 
+
+            <PlayControl className="play-control">
                 <FontAwesomeIcon 
                     className="skip-back" 
                     size="2x" 
@@ -112,7 +113,7 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
                     icon={faAngleRight} 
                     onClick={() => skipTrackHandler('skip-forward')}
                 />
-            </div> 
+            </PlayControl> 
             {/* Using ref attribute to target this specific file so we can use it in line 12 */}
             <audio 
                 // The onTimeUpdate event occurs when the playing position of an audio/video has changed
@@ -125,8 +126,52 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
                 onEnded={songEndHandler}
             >
             </audio>         
-        </div>
+        </PlayerWrapper>
     )
 }
+
+const PlayerWrapper = styled.div`
+    // min-height: 20vh;
+    width: 400px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-bottom: 20px;
+
+    @media (max-width: 500px) {
+        max-width: 250px;
+    }
+`
+
+const TimeControl = styled.div`
+    width: 100%;    
+    display: flex;    
+
+    input {
+        width: 100%;       
+        padding: 1rem 0; 
+        -webkit-appearance: none;                   
+        background: transparent;             
+    }
+
+    p {
+        padding: 1rem;
+    }
+`
+
+const PlayControl = styled.div`
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    svg {
+        cursor: pointer;                 
+        color: #000;
+    }
+`
 
 export default Player;

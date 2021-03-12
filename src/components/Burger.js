@@ -19,10 +19,7 @@ const Burger = ({ openMenu, setOpenMenu, displayNav, setDisplayNav }) => {
     )
 }
 
-const StyledBurger = styled.div`
-  /* position: absolute; */
-  /* top: 5%; */
-  left: 2rem;
+const StyledBurger = styled.div`  
   display: flex;
   flex-direction: column;
   justify-content: space-around;
