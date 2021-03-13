@@ -75,10 +75,12 @@ const Player = ({ currentSong, setCurrentSong, isPlaying, setIsPlaying, songs })
     }
 
     const songEndHandler = async () => {
-        const trackIndex = songs.findIndex(song => song.id === currentSong.id);           
-        await setCurrentSong(songs[(trackIndex + 1) % songs.length]);            
-        if(isPlaying) audioRef.current.play();
-    }     
+        let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
+        await setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+        // activeLibraryHandler(songs[(currentIndex + 1) % songs.length]);
+        if (isPlaying) audioRef.current.play();        
+        return;
+      };
 
     return (
         <PlayerWrapper>

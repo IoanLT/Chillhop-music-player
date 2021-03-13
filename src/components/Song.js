@@ -6,7 +6,7 @@ const Song = ({ currentSong, isPlaying }) => {
     return (
         <SongContainer>
             <img 
-                className={isPlaying ? 'track-animation' : 'track-animation-pause'}                               
+                className={isPlaying ? 'spinning' : ''}                               
                 src={currentSong.cover} 
                 alt="cover album" 
             />
@@ -31,9 +31,24 @@ const SongContainer = styled.div`
         border-radius: 50%;
         margin-bottom: 30px; 
         box-shadow: 0 4px 6px rgba(0,0,0,0.7), 0 4px 6px rgba(0,0,0,0.7);  
+        animation: rotation linear 60s infinite forwards;
+        animation-play-state: paused;
+
+        &.spinning {
+            animation-play-state: running;
+        }
         
         @media (max-width: 500px) {
             max-width: 250px;
+        }
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
         }
     }
 
