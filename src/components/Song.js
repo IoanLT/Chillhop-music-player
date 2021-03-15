@@ -8,7 +8,7 @@ const Song = ({ currentSong, isPlaying }) => {
 				<img
 					className={isPlaying ? "spinning" : ""}
 					src={currentSong.vinyl}
-					alt="cover album"
+					alt="vinyl"
 				/>
 				<img
 					className={isPlaying ? "spinning" : ""}
@@ -39,16 +39,15 @@ const SongContainer = styled.div`
 const ImgWrapper = styled.div`
 	display: flex;
 	justify-content: center;
-	height: 40vh;
-	/* margin-top: 100px; */
+	height: 40vh;	
+	overflow: hidden;
 
 	img:first-child {
 		position: absolute;	
 		align-self: center;	
 		width: 100%;
 		max-width: 400px;
-		border-radius: 50%;
-		/* margin-bottom: 30px; */
+		border-radius: 50%;		
 		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 4px 6px rgba(0, 0, 0, 0.7); */
 		animation: rotation linear 90s infinite forwards;
 		animation-play-state: paused;
@@ -58,7 +57,11 @@ const ImgWrapper = styled.div`
 		}
 
 		@media (max-width: 500px) {
-			max-width: 300px;
+			max-width: 250px;
+		}
+
+		@media (max-width: 350px) {
+			max-width: 200px;
 		}
 	}
 
@@ -67,8 +70,7 @@ const ImgWrapper = styled.div`
 		align-self: center;
 		width: 100%;
 		max-width: 180px;
-		border-radius: 50%;
-		margin-bottom: 30px;		
+		border-radius: 50%;		
 		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 4px 6px rgba(0, 0, 0, 0.7); */
 		animation: rotation linear 90s infinite forwards;
 		animation-play-state: paused;
@@ -78,7 +80,11 @@ const ImgWrapper = styled.div`
 		}
 
 		@media (max-width: 500px) {
-			max-width: 135px;
+			max-width: 110px;
+		}
+
+		@media (max-width: 350px) {
+			max-width: 100px;
 		}
 	}
 
@@ -100,16 +106,13 @@ const SongInfo = styled.div`
 	align-content: center;
 	text-align: center;
 
-	h2 {
-		/* display: block; */
+	h2 {		
 		padding: 1rem;
 		color: #000;
 	}
 
-	h3 {
-		/* display: block; */
-		font-size: 1rem;
-		/* margin-bottom: 20px; */
+	h3 {		
+		font-size: 1rem;		
 		color: #000;
 	}
 `
