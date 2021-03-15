@@ -65,7 +65,7 @@ const Overlay = styled.div`
 	width: 100vw;
 	height: 100vh;
 
-	/* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)); */
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
 `
 
 export default App;

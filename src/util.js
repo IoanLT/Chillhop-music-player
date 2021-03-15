@@ -18,7 +18,7 @@ const chillhop = () => {
             artist: "Makzo",
             vinyl: `${vinyl}`,
             cover: `${makzo}`,                                    
-            color: ['hsl(48.1,97.6%,67.5%)', 'hsl(224.1,39%,43.7%)'],
+            color: ['#E68670', '#38508F'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11773'
         },
         {
@@ -27,7 +27,7 @@ const chillhop = () => {
             artist: "Makzo",
             vinyl: `${vinyl}`,
             cover: `${makzo}`,            
-            color: ['hsl(48.1,97.6%,67.5%)', 'hsl(224.1,39%,43.7%)'],
+            color: ['#E68670', '#38508F'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11768'
         },        
         {
@@ -36,7 +36,7 @@ const chillhop = () => {
             artist: "Aarigod",
             vinyl: `${vinyl}`,
             cover: `${forestLore}`,            
-            color: ['hsl(82.3,74.6%,75.3%)', 'hsl(36.9,31.7%,16.1%)'],
+            color: ['#9CBA64', '#4E3D2A'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12997'
         },
         {
@@ -45,7 +45,7 @@ const chillhop = () => {
             artist: "Arbour, Aarigod",
             vinyl: `${vinyl}`,
             cover: `${forestLore}`,            
-            color: ['hsl(82.3,74.6%,75.3%)', 'hsl(36.9,31.7%,16.1%)'],
+            color: ['#9CBA64', '#4E3D2A'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=13015'
         },
         {
@@ -54,7 +54,7 @@ const chillhop = () => {
             artist: "Blue Wednesday, Shopan",
             vinyl: `${vinyl}`,
             cover: `${homeCourt}`,            
-            color: ['hsl(31,95.5%,90%)', 'hsl(13.7,59.4%,26.1%)'],
+            color: ['#FEBCAC', '#3D1919'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11233'
         },
         {
@@ -63,7 +63,7 @@ const chillhop = () => {
             artist: "Swørn",
             vinyl: `${vinyl}`,
             cover: `${reflection}`,            
-            color: ['hsl(356.4,48.1%,90%)', 'hsl(307.6,40%,23.7%)'],
+            color: ['#E7B5B5', '#834A81'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=9222'
         },
         {
@@ -72,7 +72,7 @@ const chillhop = () => {
             artist: "Mama Aiuto, Daphné",
             vinyl: `${vinyl}`,
             cover: `${lax}`,            
-            color: ['hsl(191.5,35.6%,80%)', 'hsl(10.1,75%,20%)'],
+            color: ['#458390', '#703031'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12125'
         },
         {
@@ -81,7 +81,7 @@ const chillhop = () => {
             artist: "Blue Wednesday, Shopan",
             vinyl: `${vinyl}`,
             cover: `${directions}`,            
-            color: ['hsl(316.4,40.7%,80%)', 'hsl(234.1,25.2%,40%)'],
+            color: ['#D8A1C9', '#5C6DC0'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11229'
         },
         {
@@ -90,7 +90,7 @@ const chillhop = () => {
             artist: "Birocratic",
             vinyl: `${vinyl}`,
             cover: `${essentials}`,            
-            color: ['hsl(161.5,42.9%,75%)', 'hsl(358.5,56.2%,71.4%)'],
+            color: ['#7DCBB3', '#DD8C8E'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=8675'
         },        
         {
@@ -99,7 +99,7 @@ const chillhop = () => {
             artist: "Sleepy Fish",
             vinyl: `${vinyl}`,
             cover: `${sleepyFish}`,            
-            color: ['hsl(45.8,51.4%,85.5%)', 'hsl(197.7,58.3%,32%)'],
+            color: ['#904C30', '#369EB7'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=10033'
         },
         {
@@ -108,7 +108,7 @@ const chillhop = () => {
             artist: "Philanthrope",
             vinyl: `${vinyl}`,
             cover: `${philanthrope}`,            
-            color: ['hsl(16.7,57.8%,81%)', 'hsl(73.8,23.2%,22%)'],
+            color: ['#E58762', '#454B2D'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=10263'
         },
         {
@@ -117,7 +117,7 @@ const chillhop = () => {
             artist: "Philanthrope, The Field Tapes",
             vinyl: `${vinyl}`,
             cover: `${philanthrope}`,             
-            color: ['hsl(16.7,57.8%,81%)', 'hsl(73.8,23.2%,22%)'],
+            color: ['#E58762', '#454B2D'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=10249'
         }        
     ]
