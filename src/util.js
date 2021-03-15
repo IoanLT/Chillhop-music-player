@@ -36,7 +36,7 @@ const chillhop = () => {
             artist: "Aarigod",
             vinyl: `${vinyl}`,
             cover: `${forestLore}`,            
-            color: ['hsl(78.1,80%,80%)', 'hsl(33.7,70%,26.9%)'],
+            color: ['hsl(82.3,74.6%,75.3%)', 'hsl(36.9,31.7%,16.1%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12997'
         },
         {
@@ -45,7 +45,7 @@ const chillhop = () => {
             artist: "Arbour, Aarigod",
             vinyl: `${vinyl}`,
             cover: `${forestLore}`,            
-            color: ['hsl(78.1,80%,80%)', 'hsl(33.7,70%,26.9%)'],
+            color: ['hsl(82.3,74.6%,75.3%)', 'hsl(36.9,31.7%,16.1%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=13015'
         },
         {

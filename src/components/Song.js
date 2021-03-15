@@ -25,8 +25,7 @@ const Song = ({ currentSong, isPlaying }) => {
 	);
 };
 
-const SongContainer = styled.div`
-	/* max-height: 60vh; */
+const SongContainer = styled.div`	
 	height: 60vh;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +47,6 @@ const ImgWrapper = styled.div`
 		width: 100%;
 		max-width: 400px;
 		border-radius: 50%;		
-		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 4px 6px rgba(0, 0, 0, 0.7); */
 		animation: rotation linear 90s infinite forwards;
 		animation-play-state: paused;
 
@@ -70,8 +68,7 @@ const ImgWrapper = styled.div`
 		align-self: center;
 		width: 100%;
 		max-width: 180px;
-		border-radius: 50%;		
-		/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7), 0 4px 6px rgba(0, 0, 0, 0.7); */
+		border-radius: 50%;			
 		animation: rotation linear 90s infinite forwards;
 		animation-play-state: paused;
 
@@ -108,12 +105,12 @@ const SongInfo = styled.div`
 
 	h2 {		
 		padding: 1rem;
-		color: #000;
+		color: #000;		
 	}
 
 	h3 {		
 		font-size: 1rem;		
-		color: #000;
+		color: #000;		
 	}
 `
 
