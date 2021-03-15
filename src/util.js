@@ -23,7 +23,7 @@ const chillhop = () => {
             name: "Kinsfolk",
             artist: "Aarigod",
             cover: "https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg",            
-            color: ['hsl(78.1,50%,70%)', 'hsl(33.7,29.9%,26.9%)'],
+            color: ['hsl(78.1,80%,70%)', 'hsl(33.7,70%,26.9%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=12997'
         },
         {
@@ -31,7 +31,7 @@ const chillhop = () => {
             name: "Maple",
             artist: "Arbour, Aarigod",
             cover: "https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg",            
-            color: ['hsl(78.1,50%,70%)', 'hsl(33.7,29.9%,26.9%)'],
+            color: ['hsl(78.1,80%,70%)', 'hsl(33.7,70%,26.9%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=13015'
         },
         {
@@ -87,7 +87,7 @@ const chillhop = () => {
             name: "Wildlife",
             artist: "Philanthrope",
             cover: "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",            
-            color: ['hsl(70.9,10%,70%)', 'hsl(13.9,29.5%,45%)'],
+            color: ['hsl(16.7,57.8%,81%)', 'hsl(73.8,23.2%,22%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=10263'
         },
         {
@@ -95,7 +95,7 @@ const chillhop = () => {
             name: "Serendipity",
             artist: "Philanthrope, The Field Tapes",
             cover: "https://chillhop.com/wp-content/uploads/2020/09/2899f7cc22ab12e17d0119819aac3ca9dbab46e6-1024x1024.jpg",            
-            color: ['hsl(70.9,10%,70%)', 'hsl(13.9,29.5%,45%)'],
+            color: ['hsl(16.7,57.8%,81%)', 'hsl(73.8,23.2%,22%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=10249'
         }        
     ]
