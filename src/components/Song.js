@@ -106,11 +106,13 @@ const SongInfo = styled.div`
 	h2 {		
 		padding: 1rem;
 		color: #000;		
+		color: #fff;		
 	}
 
 	h3 {		
 		font-size: 1rem;		
 		color: #000;		
+		color: #fff;		
 	}
 `
 
