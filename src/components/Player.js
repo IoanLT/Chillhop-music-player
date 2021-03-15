@@ -149,6 +149,7 @@ const PlayerWrapper = styled.div`
 	align-items: center;
 	justify-content: space-between;	
 	margin-bottom: 20px;
+	color: #fff;
 
 	@media (max-width: 500px) {
 		max-width: 250px;
@@ -179,8 +180,8 @@ const PlayControl = styled.div`
 	padding: 1rem;
 
 	svg {
-		cursor: pointer;
-		color: #000;
+		cursor: pointer;		
+		color: #fff;
 	}
 `;
 

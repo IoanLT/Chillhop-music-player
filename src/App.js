@@ -23,41 +23,49 @@ const App = () => {
 				background: `linear-gradient(to top, ${currentSong.color[0]}, ${currentSong.color[1]})`,
 			}}
 		>
-			<Header
-				displayNav={displayNav}
-				setDisplayNav={setDisplayNav}
-				openMenu={openMenu}
-				setOpenMenu={setOpenMenu}
-			/>
-			<Song currentSong={currentSong} isPlaying={isPlaying} />
-			<Player
-				songs={songs}
-				currentSong={currentSong}
-				setCurrentSong={setCurrentSong}
-				isPlaying={isPlaying}
-				setIsPlaying={setIsPlaying}
-			/>
-			<Library
-				songs={songs}
-				currentSong={currentSong}
-				setCurrentSong={setCurrentSong}
-				displayNav={displayNav}
-				setDisplayNav={setDisplayNav}
-				openMenu={openMenu}
-				setOpenMenu={setOpenMenu}
-			/>
+			<Overlay>
+				<Header
+					displayNav={displayNav}
+					setDisplayNav={setDisplayNav}
+					openMenu={openMenu}
+					setOpenMenu={setOpenMenu}
+				/>
+				<Song currentSong={currentSong} isPlaying={isPlaying} />
+				<Player
+					songs={songs}
+					currentSong={currentSong}
+					setCurrentSong={setCurrentSong}
+					isPlaying={isPlaying}
+					setIsPlaying={setIsPlaying}
+				/>
+				<Library
+					songs={songs}
+					currentSong={currentSong}
+					setCurrentSong={setCurrentSong}
+					displayNav={displayNav}
+					setDisplayNav={setDisplayNav}
+					openMenu={openMenu}
+					setOpenMenu={setOpenMenu}
+				/>
+			</Overlay>			
 		</MainWrapper>
 	);
 };
 
-const MainWrapper = styled.div`
+const MainWrapper = styled.div`	
+	height: 100%;
+	width: 100%;	
+`;
+
+const Overlay = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 100vw;
 	height: 100vh;
-	width: 100%;
-	padding: 3% 5%;
-`;
+
+	/* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)); */
+`
 
 export default App;
