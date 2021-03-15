@@ -148,7 +148,7 @@ const PlayerWrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px 0;
+	/* padding: 20px 0; */
 	margin-bottom: 20px;
 
 	@media (max-width: 500px) {
