@@ -6,7 +6,9 @@ const chillhop = () => {
             id: uuidv4(),
             name: "Seascape",
             artist: "Makzo",
+            vinyl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vinyl_record.svg/1200px-Vinyl_record.svg.png",
             cover: "https://chillhop.com/wp-content/uploads/2020/11/f78c39b4bb6313ddd0354bef896c591bfb490ff8-1024x1024.jpg",            
+            // cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Vinyl_record.svg/1200px-Vinyl_record.svg.png",            
             color: ['hsl(48.1,97.6%,67.5%)', 'hsl(224.1,39%,43.7%)'],
             audio: 'https://mp3.chillhop.com/serve.php/?mp3=11773'
         },
